@@ -1,0 +1,19 @@
+rootProject.ext.compileSdkVersion = 29
+rootProject.ext.minSdkVersion = 21
+rootProject.ext.targetSdkVersion = 29
+rootProject.ext.sourceCompatibility = JavaVersion.VERSION_1_8
+
+rootProject.ext.lifecycle = "2.0.0"
+
+rootProject.ext.deps = [
+        // android
+        androidAppCompat        : "androidx.appcompat:appcompat:1.0.2",
+        androidKTX              : "androidx.core:core-ktx:1.0.2",
+        androidRecyclerView     : "androidx.recyclerview:recyclerview:1.0.0",
+        androidLifecycleAll     : "androidx.lifecycle:lifecycle-extensions:$lifecycle",
+        androidLifecycleCompiler: "androidx.lifecycle:lifecycle-compiler:$lifecycle",
+        androidLifecycleJava    : "androidx.lifecycle:lifecycle-common-java8:$lifecycle",
+        androidLifecycleRx      : "androidx.lifecycle:lifecycle-reactivestreams:$lifecycle",
+
+        rxjava                  : "io.reactivex.rxjava3:rxjava:3.0.0-RC1",
+]
