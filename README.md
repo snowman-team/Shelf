@@ -1,4 +1,4 @@
-Snowball Android Shelf Library
+Snowball Android Shelf Library <br> [ ![Download](https://api.bintray.com/packages/aquarids/maven/base/images/download.svg?version=0.1.0) ](https://bintray.com/aquarids/maven/base/0.1.0/link)
 ============
 
 Basic architecture of mvp and mvvm with rxJava.
@@ -6,10 +6,6 @@ Basic architecture of mvp and mvvm with rxJava.
 ## Installation
 
 ```groovy
-repositories {
-    maven { url "https://xueqiumobile.bintray.com/maven" }
-}
-
 // use databinding
 dataBinding {
     enabled = true
