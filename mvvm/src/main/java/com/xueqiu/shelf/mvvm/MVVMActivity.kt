@@ -15,13 +15,13 @@ abstract class MVVMActivity<T : ViewDataBinding, VM : BaseViewModel> : BaseActiv
     abstract fun getBindingVariable(): Int
 
     protected val mViewModel by lazy { getViewModel() }
-    protected val mViewDataBinding: T? = null
+    protected var mViewDataBinding: T? = null
 
     final override fun setPageView() = setContentView(getLayoutId())
 
     @CallSuper
     override fun init() {
-        DataBindingUtil.setContentView<T>(this, getLayoutId())
+        mViewDataBinding = DataBindingUtil.setContentView<T>(this, getLayoutId())
         performDataBinding()
         observerDataChanged()
     }
